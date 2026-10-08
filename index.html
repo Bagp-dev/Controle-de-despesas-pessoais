@@ -1,36 +1,189 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <main>
 
-            <img src="capa.png" alt="fundo" id="fundo_capa">
-            
-            <section class="capa">
-                    <img src="girl.png" alt="menina" id="menina">
-                    <button class="play" onclick="location.href='#slogan'">
-                        <a href="#slogan" class="play">Começar</a>
-                    </button>
-                
-            </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-            <section class="slogan" id="slogan">
-                
-                    <img src="sticker_girl.png" alt="sticker_girl" id="fig_menina">
-                    <img src="sticker_pig.png" alt="sticker_pig" id="fig_porco">
-                    <img src="slogan.png" alt="mensagem" id="mensagem">
-                
-            </section>
-            
-            <img src="Controlador_despesas.png" alt="final" id="final"> 
-            
-            <section class="despesas">
-            </section>
-            
-        </main>
-    </body>
+<body>
+    <main>
+        <!--parte1-->
+        <section class="capa">
+            <img src="girl.png" alt="menina" id="menina">
+            <div class="start">
+                <button id="botao_start">
+                    <a href="#slogan" class="play">Começar</a>
+                </button>
+            </div>
+        </section>
+
+
+
+
+
+
+        <!--parte2-->
+        <section class="slogan" id="slogan">
+            <img src="sticker_girl.png" alt="sticker_girl" id="fig_menina">
+            <img src="sticker_pig.png" alt="sticker_pig" id="fig_porco">
+            <div class="mensagem">
+                <h2>Plante seu futuro com a gente!</h2>
+            </div>
+        </section>
+
+
+
+
+
+
+        <!--parte3-->
+        <section class="despesas">
+
+            <div class="estrutura_principal">
+                <!--imagem de fundo-->
+                <img src="Growing Money.png" alt="planta" id="planta">
+                <!--titulo da seção -->
+                <div class="despesas_titulo">
+                    <h1>Controle de despesas</h1>
+                </div>
+
+
+
+
+
+
+                <!--Painel-->
+
+                <div class="painel">
+                    <div>
+                        Total de despesas:
+                        <span class="total_despesas">0</span>
+                    </div>
+
+                    <div>
+                        Pendentes:
+                        <span class="pendentes">0</span>
+                    </div>
+
+                    <div>
+                        Pagos:
+                        <span class="pagos">0</span>
+                    </div>
+
+                    <div>
+                        Valor pendente: R$
+                        <span class="valor_pendente">0.00</span>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!--estrutura base-->
+                <div class="estrura_base">
+
+                    <!--formulário-->
+                    <div class="formulario">
+                        <h3>
+                            Cadastro
+                        </h3>
+                        <form>
+                            <label for="fname">Digite sua despesa:</label>
+                            <input type="text">
+                            <label for="data">Data de registro</label>
+                            <input type="date">
+                            <label for="Pagamento">Forma de Pagamento</label>
+                            <select name="Pagamento">
+                                <option value="">Selecione</option>
+                                <option value="Crédito">Cartão de crédito</option>
+                                <option value="Pix">Pix</option>
+                                <option value="Dinheiro">Dinheiro</option>
+                            </select>
+                            <label for="Categoria">Categoria</label>
+                            <select name="Categoria">
+                                <option value="">Selecione</option>
+                                <option value="Alimentação">Alimentação</option>
+                                <option value="Lazer">Lazer</option>
+                                <option value="Contas">Contas</option>
+                                <option value="Transporte">Transporte</option>
+                            </select>
+                            <label for="Valor">Valor</label>
+                            <input type="number">
+                        </form>
+                        <button type="submit" id="adionar" onclick="alert('Despesa adicionada')">
+                            Adicionar despesa
+                        </button>
+                    </div>
+
+                    <!--filtro e reultado-->
+
+                    <!--filtro-->
+                    <div class="estrutura">
+                        <div class="filtro">
+                            <div class="busca">
+                                <input type="search" placeholder="Digite a despesa que quer procurar" id="pesquisa">
+                                <button type="submit" id="procurar">
+                                    🔍︎​ Buscar
+                                </button>
+                            </div>
+                            <div class="filtro_operation">
+                                <form>
+                                    <label for="data">Data de registro</label>
+                                    <input type="date">
+                                    <label for="Pagamento">Forma de Pagamento</label>
+                                    <select name="Pagamento">
+                                        <option value="">Selecione</option>
+                                        <option value="Crédito">Cartão de crédito</option>
+                                        <option value="Pix">Pix</option>
+                                        <option value="Dinheiro">Dinheiro</option>
+                                    </select>
+                                    <label for="Categoria">Categoria</label>
+                                    <select name="Categoria">
+                                        <option value="">Selecione</option>
+                                        <option value="Alimentação">Alimentação</option>
+                                        <option value="Lazer">Lazer</option>
+                                        <option value="Contas">Contas</option>
+                                        <option value="Transporte">Transporte</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!--Resultado de pesquisa-->
+                        <div class="resultado">
+                            <table>
+                                <thead>
+                                    <th class="detalhes">
+                                        Descrição
+                                    </th>
+                                    <th class="valor">
+                                        Valor
+                                    </th>
+                                    <th class="status">
+                                        Status
+                                    </th>
+                                </thead>
+                                <tbody>
+                                    <!--javascript-->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <script scr="script.js"></script>
+        <footer>
+            <img src="marca.png" id="ass">
+            <span>© Beatriz Araújo</span>
+            <span>S.D.G.</span>
+        </footer>
+    </main>
+</body>
+
 </html>

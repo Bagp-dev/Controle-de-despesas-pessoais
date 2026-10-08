@@ -1,49 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body,html{
     padding: 0%;
     margin: 0%;
-    box-sizing: border-box;
     background-color: #2C170B;
 }
+
 main{
     width: 100%;
     display: flex;
     flex-direction: column;
     background-position: center;
-    background-size: cover;
+    background-size: couver;
     background-repeat: no-repeat;
     min-height: 100vh;
 }
 
 .capa{
-    position: absolute;
-    
+    position: relative; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 350px;
+    background-image: url('capa.png');
+    background-position: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
 #menina{
-    padding-top: 150px;
-    padding-left: 200px;
+    padding-top: 11px;
+    width: 330px; 
+    padding-right: 800px;
+    position: absolute;
 }
-.play{
-    font-family: 'Lobster Two';
-    color: #5C9C2B;
+
+.start{
+    margin-top: 250px;
+    margin-left: 300px;
 }
+
+#botao_start{
+    font-family: 'Lobster';
+    color: #5A992B;
+    background-color: #ffedd6;
+    height: 100px;
+    width: 250px;
+    border-radius: 15px;
+    border-style:dashed;
+    border-color: #5A992B;
+    border-width: 4px;
+    font-size: 35px; 
+    position: absolute;
+    padding-bottom: 10px;
+    
+}
+
+a{
+    color: #5A992B;
+}
+
+
+
+
+
 .slogan{
     background-color: #2C170B; 
     width: 100%;
     height:1000px;
-    position: relative;  
-}
-
-#mensagem{
-    
-    width: 1000px;
-    height: 700px;
-    padding-top: 150px;
-    margin-left: 300px;
-    
-    
+    position: relative;
+    display: flex; 
 }
 
 #fig_menina{
@@ -51,10 +80,110 @@ main{
     padding-top: 10px;
     position: absolute;
 }
+
 #fig_porco{
     position: absolute;
     padding-left: 50px;
     padding-top: 600px;
+}
+
+.mensagem{
+    width: 1081px;
+    height: 700px;
+    background-color: #ffffff;
+    background-image: url('background_slogan.png');
+    background-position: 100%; 
+    background-position: center; 
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #5A992B;
+    border-width: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    justify-self: center;
+    align-self: center;
+    margin-left: 250px;
+    
+}
+
+h2{
+    font-family: 'Lobster';
+    color: #84CA50;
+    width: 500px;
+    text-align: center;
+    -webkit-text-stroke-width: 0.15px; 
+    -webkit-text-stroke-color: #85bb5c;
+}
+
+
+
+
+.despesas{
+    position: relative; 
+    background-image: url('Controlador_despesas.png');
+    background-color: #2C170B;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size:cover;
+    height: 1200px;
+    display: flex;
+    
+}
+
+.estrutura_principal{
+    display: flex;
+    flex-direction: column;
+}
+
+#planta{
+    position: absolute;
+    width: 77px;
+    height: 71px;
+    padding: 70px;
+    margin-top: 20px;
+    align-self: self-start;
+}
+
+h1{
+    font-family: 'Lobster two';
+    color: #F9C500;
+    position: absolute;
+    padding: 50px;
+    margin-left: 110px;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.painel{
+    width: 1420px;
+    height: 100px;
+    background-color: #ffffff00;
+    display: flex;
+    justify-items: center;
+    position: relative;
+    margin-left: 65px;
+    margin-top: 250px;
+    border-radius: 20px;
+    border: 3px;
+    border-color: #2C170B;
+    border-width: 2px;
+    border-style: solid;
+    flex-wrap: wrap;
+    color: #2C170B;
+    gap: 270px;
+    padding-left: 50px;
+}
+
+.painel>div{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-self: center;
+    align-self: center;
+    font-family: 'montserrat';
+    font-weight: 800;
 }
 
 
@@ -66,4 +195,241 @@ main{
 
 
 
+
+
+
+
+.estrura_base{
+    display: flex;
+    flex-direction: row;
+}
+
+.formulario{
+    width: 400px;
+    height: 630px;
+    border-radius: 40px 0px 40px 40px;
+    background-color: #F9C500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 65px;
+    margin-top: 50px;
+    flex-direction: column;
+    
+}
+
+h3{
+    color: #ffffff;
+    font-family: "lobster two";
+    font-size: 50px;
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+
+.formulario form{
+    width: 200px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.formulario label,p{
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'montserrat';
+    font-weight: 600;
+    
+    
+}
+
+.formulario input{
+    color: #2C170B;
+    font-family: 'montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 3px;
+    width: 200px;
+}
+
+.formulario option,select{
+    font-family: 'montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    height: 30px;
+    width: 200px;
+    border-radius: 6px;
+    border: none;
+    
+}
+
+#adionar {
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 2px;
+    height: 40px;
+    width: 200px;
+    font-family: 'montserrat';
+    font-weight: 700;
+    color: #F9C500;
+}
+
+#adionar:active {
+    background-color: #2C170B;
+    color: #fff;
+}
+
+.estrutura{
+    display: flex;
+    flex-direction: column;
+}
+.filtro{
+    width: 1000px;
+    height: 110px;
+    background-color: #ffffff00;
+    display: flex;
+    justify-items: center;
+    padding-top: 15px;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 50px;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 3px;
+    border-color: #F9C500;
+    border-width: 2px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.busca{
+    padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+#pesquisa{
+    width: 800px;
+    color: #2C170B;
+    font-family: 'montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 3px;
+}
+
+#procurar{
+    border-radius: 20px;
+    background-color: #F9C500;
+    border: 1px;
+    height: 40px;
+    width: 100px;
+    font-family: 'montserrat';
+    font-weight: 700;
+    color: #fff
+}
+
+#procurar:active {
+    background-color: #2C170B;
+    color: #fff;
+}
+
+.filtro_operation{
+    
+    display: flex;
+    white-space: nowrap;
+    margin-left: 35px;
+}
+
+.filtro_operation form{
+    
+    width: 200px;
+    gap: 30px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    height: 63px;
+}
+.filtro_operation label,p{
+    color: #2C170B;
+    font-size: 15px;
+    font-family: 'montserrat';
+    font-weight: 600;
+    padding-top: 5px;
+    
+}
+.filtro_operation input{
+    color: #2C170B;
+    font-family: 'montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 3px;
+    width: 200px;
+}
+.filtro_operation option,select{
+    font-family: 'montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    width: 150px;
+}
+
+.resultado{
+    width: 1000px;
+    height: 450px;
+    background-color: #ffffff00;
+    display: flex;
+    justify-items: center;
+    padding-top: 15px;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 30px;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 3px;
+    border-color: #f9c30000;
+    border-width: 2px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+#ass{
+    width: 50px;
+    height: 50px;
+}
+table{
+    font-family: 'montserrat';
+    color: #F9C500;   
+}
+th{
+    border:0;
+    border-bottom: 2px;
+    border-style: dotted;
+    border-color: #f9c300;
+    padding-bottom: 5px;
+}
 
