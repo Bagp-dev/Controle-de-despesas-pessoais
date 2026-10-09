@@ -1,16 +1,20 @@
 # Controle-de-despesas-pessoais
 Sistema feito para registrar gastos e acompanhar pagamentos
 
-## Uso de Inteligência Artificial
 
-A inteligência artificial foi utilizada como ferramenta de apoio durante o desenvolvimento do projeto, principalmente na criação de ilustrações e na implementação do JavaScript.
 
-**Design e Figma:** O conceito visual, o planejamento da interface, a escolha dos elementos e a composição do design foram idealizados e desenvolvidos por mim. Algumas partes foram desenhadas manualmente no Figma, enquanto a IA foi utilizada para gerar ilustrações que contribuíram para a identidade visual do projeto. Também consultei referências em sites para apoiar minhas decisões de design.
+## Uso de IA
 
-**HTML e CSS:** A implementação foi realizada principalmente com base nos meus conhecimentos prévios e em práticas que já havia estudado e exercitado. Consultei referências externas e utilizei a IA pontualmente para auxiliar em dúvidas e ajustes específicos, mantendo minha participação direta na construção da estrutura e da estilização da interface.
+As ferramentas de inteligência artificial foram utilizadas como apoio em diferentes etapas do projeto. A concepção visual, o planejamento da interface e das funcionalidades foram realizados por mim, com diferentes níveis de auxílio da IA durante a implementação.
 
-**JavaScript:** Esta foi a etapa em que mais precisei do auxílio da IA. Embora tenha definido o planejamento das funcionalidades, a lógica desejada e os comportamentos esperados, recorri amplamente à ferramenta para gerar e ajustar o código. Testei as implementações, identifiquei problemas e refinei as instruções até alcançar os resultados esperados.
+| Data | Descrição do modelo | Prompt utilizado | Onde foi usado |
+|---|---|---|---|
+| 06/10/2026 | ChatGPT — modelo utilizado na conversa | Solicitei auxílio pontual com dúvidas e ajustes na estrutura HTML, utilizando meus conhecimentos prévios como base. | HTML — estrutura da página. |
+| 07/10/2026 | ChatGPT — modelo utilizado na conversa | Solicitei auxílio pontual com dúvidas e ajustes de estilização, consultando também referências externas. | CSS — estilização e apresentação da interface. |
+| 08/10/2026 | ChatGPT — modelo utilizado na conversa | Expliquei o planejamento das funcionalidades de cadastro, listagem, filtros, exclusão e atualização de despesas e solicitei a geração, correção e adaptação do JavaScript conforme os comportamentos esperados. | JavaScript — implementação das funcionalidades e manipulação do DOM. |
+| [Data a confirmar] | ChatGPT — modelo utilizado na conversa | Solicitei a geração de ilustrações para utilizar no design que planejei e desenvolvi no Figma. | Ilustrações utilizadas na interface. |
 
+**Revisão e adaptação:** No HTML e CSS, utilizei meus conhecimentos prévios, consultei referências e revisei os ajustes sugeridos pela IA. No JavaScript, testei as funcionalidades, identifiquei problemas, refinei os prompts e solicitei explicações detalhadas para compreender o código. Reconheço que essa etapa contou com participação significativa da IA na geração do código e que continuo desenvolvendo minha autonomia nessa linguagem. No Figma, fui responsável pela concepção visual e pela composição do design, incluindo elementos desenvolvidos manualmente, e adaptei as ilustrações geradas ao projeto.
 
 ## Rodapé do autor
 
