@@ -12,5 +12,6 @@ A inteligência artificial foi utilizada como ferramenta de apoio durante o dese
 **JavaScript:** Esta foi a etapa em que mais precisei do auxílio da IA. Embora tenha definido o planejamento das funcionalidades, a lógica desejada e os comportamentos esperados, recorri amplamente à ferramenta para gerar e ajustar o código. Testei as implementações, identifiquei problemas e refinei as instruções até alcançar os resultados esperados.
 
 
-##Rodapé do autor:
+## Rodapé do autor
+
 Sendo bem sicera,  eu esperava mais de mim mesma, queria dar o meu melhor neste projeto, mas não consegui fazer como fiz com Html e Css na programação com JavaScript. Por isso, além de utilizar a IA para implementar as funcionalidades e fazer o código, solicitei explicações detalhadas sobre o código, com o objetivo de compreender a lógica, aprender o papel de cada instrução e conseguir desenvolver soluções semelhantes por conta própria no futuro. Este projeto representa não apenas a aplicação dos conhecimentos que já possuo, mas também uma oportunidade de identificar minhas dificuldades e direcionar meu aprendizado.
