@@ -157,7 +157,7 @@ h1{
 }
 
 .painel{
-    width: 1420px;
+    width: 1400px;
     height: 100px;
     background-color: #ffffff00;
     display: flex;
@@ -268,7 +268,7 @@ h3{
     
 }
 
-#adionar {
+#adicionar {
     border-radius: 20px;
     background-color: #ffffff;
     border: 2px;
@@ -279,7 +279,7 @@ h3{
     color: #F9C500;
 }
 
-#adionar:active {
+#adicionar:active {
     background-color: #2C170B;
     color: #fff;
 }
@@ -408,6 +408,7 @@ h3{
     display: flex;
     flex-direction: column;
     
+    
 }
 
 footer{
@@ -423,7 +424,7 @@ footer{
 }
 table{
     font-family: 'montserrat';
-    color: #F9C500;   
+    color: #F9C500;  
 }
 th{
     border:0;
@@ -432,4 +433,30 @@ th{
     border-color: #f9c300;
     padding-bottom: 5px;
 }
+.resultado tbody{
+    font-family: 'montserrat';
+    color:#2C170B;
+    font-weight: 600;
+    justify-self: center;
+}
+.resultado table {
+    width: 100%;
+    table-layout: fixed;
+}
 
+.resultado th,
+.resultado td {
+    text-align: left;
+    padding: 10px;
+}
+
+.botao_excluir {
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 2px solid #F9C500;
+    height: 40px;
+    width: 80px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #F9C500;
+}
